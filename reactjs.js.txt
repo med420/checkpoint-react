@@ -1,0 +1,55 @@
+// App.js
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Container, Nav, Card } from 'react-bootstrap';
+
+function App() {
+  return (
+    <>
+      {/* Fragment React */}
+      <div className="App">
+        {/* Barre de navigation */}
+        <Navbar bg="dark" variant="dark">
+          <Container>
+            <Navbar.Brand href="#home">Mon Site</Navbar.Brand>
+            <Nav className="me-auto">
+              <Nav.Link href="#accueil">Accueil</Nav.Link>
+              <Nav.Link href="#apropos">À propos</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+
+        {/* En-tête et cartes */}
+        <Container className="mt-4">
+          <h1 className="mb-4">Bienvenue sur mon application React</h1>
+
+          <div className="d-flex gap-3 flex-wrap justify-content-center">
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title>Carte 1</Card.Title>
+                <Card.Text>Contenu de la première carte.</Card.Text>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title>Carte 2</Card.Title>
+                <Card.Text>Contenu de la deuxième carte.</Card.Text>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <Card.Title>Carte 3</Card.Title>
+                <Card.Text>Contenu de la troisième carte.</Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+        </Container>
+      </div>
+    </>
+  );
+}
+
+export default App;
