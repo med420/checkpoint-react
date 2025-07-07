@@ -1,0 +1,26 @@
+Algorithme SommeDifferents
+Variables
+  ensemble1, ensemble2 : tableau d'entiers
+  i : entier
+  somme : entier ← 0
+Début
+  // Exemple d'initialisation
+  ensemble1 ← [1, 2, 3, 4]
+  ensemble2 ← [3, 4, 5, 6]
+
+  // Parcours du premier ensemble
+  Pour i de 0 à longueur(ensemble1) - 1 faire
+    Si ensemble1[i] n’est pas dans ensemble2 alors
+      somme ← somme + ensemble1[i]
+    FinSi
+  FinPour
+
+  // Parcours du deuxième ensemble
+  Pour i de 0 à longueur(ensemble2) - 1 faire
+    Si ensemble2[i] n’est pas dans ensemble1 alors
+      somme ← somme + ensemble2[i]
+    FinSi
+  FinPour
+
+  Afficher "Somme des éléments différents : ", somme
+Fin
