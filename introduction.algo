@@ -1,0 +1,35 @@
+Algorithme AnalysePhrase
+Variables
+  phrase : chaîne
+  i, longueur, nbMots, nbVoyelles : entier
+  c : caractère
+
+Début
+  // Exemple de phrase
+  phrase ← "Bonjour tout le monde."
+
+  // Initialisation des compteurs
+  longueur ← 0
+  nbMots ← 1     // On commence à 1 car il y a (nombre d'espaces + 1) mots
+  nbVoyelles ← 0
+
+  Pour i de 0 à longueur(phrase) - 1 faire
+    c ← phrase[i]
+    longueur ← longueur + 1
+
+    // Compter les mots
+    Si c = ' ' alors
+      nbMots ← nbMots + 1
+    FinSi
+
+    // Compter les voyelles (en minuscules pour simplifier)
+    c ← minuscule(c)
+    Si c = 'a' ou c = 'e' ou c = 'i' ou c = 'o' ou c = 'u' ou c = 'y' alors
+      nbVoyelles ← nbVoyelles + 1
+    FinSi
+  FinPour
+
+  Afficher "Longueur : ", longueur
+  Afficher "Nombre de mots : ", nbMots
+  Afficher "Nombre de voyelles : ", nbVoyelles
+Fin
