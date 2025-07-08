@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d'atterrissage - Portefeuille</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">MonPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Travail</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Accueil / Hero -->
+  <section id="accueil" class="hero text-center p-5 text-white bg-primary">
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <p>Développeur Web | Designer | Créatif</p>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="about" class="container my-5">
+    <h2>À propos</h2>
+    <p>Je suis un développeur passionné avec de l'expérience dans la création de sites web modernes et réactifs. Mon objectif est de concevoir des solutions fonctionnelles et esthétiques.</p>
+  </section>
+
+  <!-- Section Travail -->
+  <section id="work" class="container my-5">
+    <h2>Travail</h2>
+    <p>Voici quelques projets récents :</p>
+    <ul>
+      <li>Application de gestion de tâches</li>
+      <li>Site vitrine pour une agence de voyages</li>
+      <li>Boutique e-commerce responsive</li>
+    </ul>
+  </section>
+
+  <!-- Section CV -->
+  <section id="cv" class="container my-5">
+    <h2>Mon CV</h2>
+    <p>Téléchargez mon CV ou parcourez mes expériences professionnelles :</p>
+    <a href="#" class="btn btn-outline-secondary">Télécharger le CV</a>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="container my-5">
+    <h2>Contact</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 MonPortfolio. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
