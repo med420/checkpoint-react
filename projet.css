@@ -1,0 +1,79 @@
+/* Importation de la police Roboto depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Appliquer la police Roboto sur tout le document */
+html, body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Améliorer la navbar */
+.navbar {
+  background-color: #222 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 1rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Style pour la section héros */
+.hero {
+  background-image: linear-gradient(to right, #0d6efd, #0dcaf0);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Style des cartes produits */
+.card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+/* Pied de page */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Réactivité personnalisée */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0.5rem 0;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+}
